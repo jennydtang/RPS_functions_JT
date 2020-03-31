@@ -13,6 +13,7 @@ function getChoice()
                 return choice[2];
             }
         }
+        
 var player1 = {
     name: "Jenny",
     choice: getChoice()
@@ -36,10 +37,10 @@ function playGame(player1, player2, playUntil){
             if(player2Choice == 'rock'){
                 if(player1Choice == 'scissors'){
                     player2Win++;
-                    return  player2.name + " has " + player2Choice + ". " + player1.name + " has " + player1Choice + ". "  + player2.name + " loses!";
+                    return  player2.name + " has " + player2Choice + ". " + player1.name + " has " + player1Choice + ". "  + player1.name + " loses!";
                 }else {
                     player1Win++;
-                    return player2.name + " has " + player2Choice + ". " + player1.name + " has " + player1Choice + ". " + player2.name +" wins!";
+                    return player2.name + " has " + player2Choice + ". " + player1.name + " has " + player1Choice + ". " + player1.name +" wins!";
                 }
             }
             if(player2Choice == 'paper'){
